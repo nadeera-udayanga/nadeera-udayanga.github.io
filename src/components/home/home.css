@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 2fr 2fr ; /* Define columns: 1 part for text, 2 parts for image */
     align-items: center;
+    
   }
   
   .home__img {
@@ -58,18 +59,23 @@
   }
 
   @media  screen and (max-width:768px) {
+    .section{
+      padding: 4rem 0 2rem;
+    }
     .home__content.grid {
       grid-template-columns: 1fr;
       text-align: center;
-  }
-  .home__img {
-    justify-content: center;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  p{
-    margin-top: 1rem;
-    font-size: 0.8rem;
-  }
+      top: initial;
+          
+    }
+    .home__img {
+      justify-content: center;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    p{
+      margin-top: 1rem;
+      font-size: 0.8rem;
+    }
 }
